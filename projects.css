@@ -210,7 +210,7 @@
 
 .team a:nth-child(9) > div {
     background-image:linear-gradient(rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)), url('YOUR_IMAGE_NAME.jpg');
+    rgba(0, 0, 0, 0.4)), url('project_photo.jpeg');
     background-repeat: no-repeat;
     height:70vh;
     background-position: center;
@@ -400,3 +400,4 @@
     }
 
 }
+
