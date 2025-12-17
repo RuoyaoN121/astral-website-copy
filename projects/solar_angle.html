@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.S.T.R.A.L. | Solar Proximity Cuts and GWB Signal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="article.css">
-<link rel="icon" href="../logo.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../article.css">
+    <link rel="icon" href="../logo.ico">
 </head>
 <body>
     <div class="cursor">
         <p></p>
     </div>
     <div class="blob"></div>
+    
     <div class="navbar bg-nav">
         <a href="../index.html">
-            <img src="../logo.svg" alt="" class="logo">
+            <img src="../logo.svg" alt="ASTRAL Logo" class="logo">
         </a>
         <div class="menu-icon">
             <a onclick="toggleMenu();">
@@ -59,125 +60,148 @@
             </div>
         </div>
     </div>
+
     <div class="scroll-container">
         <div class="hero">
             <div class="title-container">
-                <h1>Solar Proximity Cuts and the Gravitational Wave Background Signal_</h1>
+                <h1>Solar Proximity Cuts and the Gravitational Wave Background_</h1>
                 <div class="tags">
-                    <div class="tag">Gravitational Waves</div>
+                    <div class="tag">Astrophysics</div>
                     <div class="tag">Data Analysis</div>
                     <div class="tag">Pulsar Timing</div>
                 </div>
             </div>
             <div class="image">
                 <div class="effect-container">
-                    <img src="../project-three-mockup-horizontal.jpg" alt="A mock-up diagram of a pulsar timing array with a solar proximity cut applied.">
+                    <img src="../meerkat-dish.jpg" alt="MeerKAT Dish">
                     <div class="grid-effect"></div>
                 </div>
             </div>
         </div>
+
         <div class="content">
+            <div class="section supervisors">
+                <h2>Mentors</h2>
+                <div class="grid">
+                    <div class="person">
+                        <img src="../mbailes.jpg" alt="Prof. Matthew Bailes">
+                        <h3>Prof. Matthew Bailes</h3>
+                    </div>
+                    <div class="person">
+                        <img src="../emma-carli.png" alt="Dr. Emma Carli">
+                        <h3>Dr. Emma Carli</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section contributors">
+                <h2>Contributors</h2>
+                <div class="grid">
+                    <div class="person">
+                        <img src="../robert.jpg" alt="Ruoyao Ni">
+                        <h3>Ruoyao Ni</h3>
+                    </div>
+                </div>
+            </div>
+
             <div class="section text introduction">
                 <h2>Introduction</h2>
                 <p>
-                    This work focuses on a crucial data challenge in Pulsar Timing Array (PTA) observations: how to treat data collected when pulsars are observed in close angular proximity to the Sun.
-                    The main objective was to systematically investigate how removing these 'solar proximity' observations affects the inferred signal-to-noise ratio (SNR) for the Gravitational Wave Background (GWB) and its characteristic Hellings-Downs correlation.
+                    This project investigates a critical challenge in Pulsar Timing Array (PTA) observations: the treatment of data collected when pulsars are in close angular proximity to the Sun. The solar wind introduces significant noise that can mimic or obscure the delicate signals of gravitational waves.
                 </p>
                 <p>
-                    This final investigation builds upon earlier analyses, which included applying various cuts to unfiltered data to compare against a benchmark dataset, and performing an in-depth noise analysis on data where Frequency-Dependent (FD) noise had been removed.
-                </p>
-            </div>
-            
-            <div class="section text analysis">
-                <h2>Analysis and Key Findings</h2>
-                <p>
-                    The analysis was performed using the optimal statistic package, which estimates the significance and amplitude of spatial correlation templates, such as the Hellings-Downs (HD) curve, which is the expected quadrupolar signature of the GWB.
+                    The primary aim was to determine how removing these "solar proximity" observations affects the detection of the Gravitational Wave Background (GWB). Specifically, the analysis focused on the optimal statistic—a frequentist estimator used to compare the strength of the Hellings-Downs (HD) spatial correlation (the signature of a GWB) against dipolar correlations, which often indicate systematic errors like ephemeris inaccuracies.
                 </p>
                 <p>
-                    Using **simulated datasets**, the expected outcome was observed: as the angle cut (the amount of data excluded near the Sun) increased, the SNR for both the HD and dipolar correlations generally decreased due to the loss of data.
+                    Using both real MeerKAT datasets and simulated data (with and without solar wind noise models), we examined how varying the "cut angle" around the Sun impacts the recovered Signal-to-Noise Ratio (SNR). The results highlight the complex interplay between data selection, solar wind modeling, and the robustness of gravitational wave detection statistics.
                 </p>
-                <p>
-                    When examining **real datasets**, a strong correlation between the HD and Dipolar SNRs was noted, a pattern that persisted across datasets both with and without Solar Wind (SW) modelling. This highlights the complexity and sensitivity of correlation statistics to various systematic factors, including ephemeris accuracy and noise modeling.                 </p>
             </div>
 
             <div class="section text credits">
                 <h2>Credits</h2>
+                <h3>Report written by Ruoyao Ni.</h3>
                 <p>
-                    [Please write a brief credit/acknowledgement to your supervisors here.]
+                    I thank Hendrik Combrinck and Saurav Mishra for providing the templates and simulated datasets necessary for this analysis. 
+                    I also thank the entire MPTA team for their guidance and feedback throughout the internship.
+                </p>
+                <p>
+                    Thank you to Prof. Matthew Bailes and Dr. Emma Carli for supervising this project. This project is funded by A.S.T.R.A.L.
                 </p>
             </div>
 
             <div class="section download">
                 <h2>Download Full Report</h2>
-                <a href="pdf/final-report-project-3.pdf">Download PDF</a>
+                <p><b>NOTE!</b> This report was produced by the ASTRAL Student Team.</p>
+                <a href="../pdf/intern_report_fixed3.pdf">Download PDF</a>
             </div>
         </div>
+
         <div class="footer">
             <div class="supporters">
                 <h2>A.S.T.R.A.L. is supported by</h2>
                 <div class="partners">
                     <a href="https://www.swinburne.edu.au">
-                        <img src="../swin.jpg" alt="">
+                        <img src="../swin.jpg" alt="Swinburne Logo">
                     </a>
                     <a href="https://ozgrav.org" style="width: 25%;">
-                        <img src="../ozgrav.png" alt="">
+                        <img src="../ozgrav.png" alt="OzGrav Logo">
                     </a>
                 </div>
             </div>
-                <div class="final-info">
-                    <div class="copyright">
-                        <p>We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our program runs.</p>
-                        <p>&copy; 2025. Astrophysics, Supercomputing, Technology, Research, Analytics, Technology Institute (ASTRAL). All Rights Reserved. Designed and Developed by [Your Name or ASTRAL]</p>
-                        <p>Credit to Carl Knox from OzGrav, NASA</p>
-                        <a class="underline-button" href="../privacy-policy.html">
-                            <div>
-                                <div class="text-indicator">
-                                    <p>Privacy Policy</p>
-                                    <p>Privacy Policy</p>
-                                </div>
-                                <div class="img-indicator">
-                                    <img src="../arrow-link.svg" alt="">
-                                    <img src="../arrow-link.svg" alt="">
-                                </div>
+            <div class="final-info">
+                <div class="copyright">
+                    <p>We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our program runs.</p>
+                    <p>&copy; 2025. Astrophysics, Supercomputing, Technology, Research, Analytics, Technology Institute (ASTRAL). All Rights Reserved.</p>
+                    <p>Credit to Carl Knox from OzGrav, NASA</p>
+                    <a class="underline-button" href="../privacy-policy.html">
+                        <div>
+                            <div class="text-indicator">
+                                <p>Privacy Policy</p>
+                                <p>Privacy Policy</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="socials">
-                        <h2>Socials</h2>
-                        <div class="links">
-                            <a href="https://www.linkedin.com/company/astral-institute" class="footer-link">LinkedIn</a>
-                            <a href="https://discord.gg/Yp6v8xcrT9" class="footer-link">Discord</a>
-                            <a href="https://www.instagram.com/astral.institute/" class="footer-link">Instagram</a>
-                            <a href="mailto:mbailes@swin.edu.au" class="footer-link">Email</a>
+                            <div class="img-indicator">
+                                <img src="../arrow-link.svg" alt="">
+                                <img src="../arrow-link.svg" alt="">
+                            </div>
                         </div>
+                    </a>
+                </div>
+                <div class="socials">
+                    <h2>Socials</h2>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/company/astral-institute" class="footer-link">LinkedIn</a>
+                        <a href="https://discord.gg/Yp6v8xcrT9" class="footer-link">Discord</a>
+                        <a href="https://www.instagram.com/astral.institute/" class="footer-link">Instagram</a>
+                        <a href="mailto:mbailes@swin.edu.au" class="footer-link">Email</a>
                     </div>
-                    <div class="sitemap">
-                        <h2>Sitemap</h2>
-                        <div class="links">
-                            <a href="../index.html" class="footer-link">Home</a>
-                            <a href="../about.html" class="footer-link">About</a>
-                            <a href="../projects.html" class="footer-link">Projects</a>
-                            <a href="../tools.html" class="footer-link">Tools</a>
-                            <a href="../cohort.html" class="footer-link">Cohort</a>
-                            <a href="../team.html" class="footer-link">Mentors</a>
-                            <a href="../apply.html" class="footer-link">Apply</a>
-                            <a href="../events.html" class="footer-link">Events</a>
-                            <a href="../support.html" class="footer-link">Support</a>
-                            <a href="../contact.html" class="footer-link">Contact</a>
-                            <a href="../faqs.html" class="footer-link">FAQs</a>
-                        </div>
+                </div>
+                <div class="sitemap">
+                    <h2>Sitemap</h2>
+                    <div class="links">
+                        <a href="../index.html" class="footer-link">Home</a>
+                        <a href="../about.html" class="footer-link">About</a>
+                        <a href="../projects.html" class="footer-link">Projects</a>
+                        <a href="../tools.html" class="footer-link">Tools</a>
+                        <a href="../cohort.html" class="footer-link">Cohort</a>
+                        <a href="../team.html" class="footer-link">Mentors</a>
+                        <a href="../apply.html" class="footer-link">Apply</a>
+                        <a href="../events.html" class="footer-link">Events</a>
+                        <a href="../support.html" class="footer-link">Support</a>
+                        <a href="../contact.html" class="footer-link">Contact</a>
+                        <a href="../faqs.html" class="footer-link">FAQs</a>
                     </div>
-                    <div class="back-to-top">
-                        <a onclick="lenis.scrollTo('.hero')"><img src="circle_arrow.svg" alt=""></a>
-                    </div>
+                </div>
+                <div class="back-to-top">
+                    <a onclick="lenis.scrollTo('.hero')"><img src="../circle_arrow.svg" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="../smooth-scroll.js"></script>
     <script src="../cursor.js"></script>
     <script src="../navbar.js"></script>
-    <script src="article-grid-effect.js"></script>
+    <script src="../article-grid-effect.js"></script>
 </body>
 </html>
